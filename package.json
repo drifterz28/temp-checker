@@ -5,9 +5,15 @@
   "repository": "git@github.com:drifterz28/temp-checker.git",
   "author": "Chris Whitney <chris@chriswhitney.com>",
   "license": "MIT",
+  "scripts": {
+    "dev": "nodemon -w ./src/* ./src/index.js",
+    "update": "git pull",
+    "start": "node ./src/index.js"
+  },
   "dependencies": {
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
+    "nodemon": "^2.0.2",
     "twilio": "^3.39.3"
   }
 }
