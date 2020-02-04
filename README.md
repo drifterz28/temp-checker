@@ -3,6 +3,9 @@ Keeps track of temps and notifies when threshold is hit
 
 - update .env file
 
+good example
+https://www.losant.com/blog/making-the-esp8266-low-powered-with-deep-sleep
+
 ## TODO
 
 - setup esp for deep sleep with time options
