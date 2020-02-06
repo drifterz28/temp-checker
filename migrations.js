@@ -12,6 +12,7 @@ const connection = mysql.createPool({
 
 migration.init(connection, __dirname + '/migrations');
 
+// https://www.npmjs.com/package/mysql-migrations
 // node migrations.js add migration create_table_users
 // node migrations.js up
-// node migrations.js add seed create_table_users
+// node migrations.js refresh
