@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Project</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <h1>Tempature tracking and notifications</h1>
+    <div class="container">
+      <form>
+        <label>
+          <div class="label">Wifi SSID:</div>
+          <input name="wifi" />
+        </label>
+        <label>
+          <div class="label">Wifi Password:</div>
+          <input name="password" type="password" />
+        </label>
+        <label>
+          <div class="label">Cell number:</div>
+          <input name="phone" type="tel" />
+        </label>
+        <label>
+          <div class="label">API key:</div>
+          <input name="key" />
+        </label>
+        <label>
+          <div class="label">Low temp notification:</div>
+          <input name="temp" />
+        </label>
+        <label>
+          <div class="label">Report interval:</div>
+          <select name="timing">
+            <option value="15">15 minutes</option>
+            <option value="30">30 minutes</option>
+            <option value="60">60 minutes</option>
+          </select>
+        </label>
+      </form>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

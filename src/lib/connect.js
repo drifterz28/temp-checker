@@ -1,5 +1,5 @@
 const mysql = require('mysql2');
-console.log(process.env.USER)
+
 const connectionString = {
   host: process.env.HOST,
   user: process.env.DBUSER,
