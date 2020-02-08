@@ -68,3 +68,22 @@ select {
     width: 100%;
   }
 }
+
+button {
+  outline: none;
+  padding: .9em 4em;
+  letter-spacing: 1px;
+  font-size: .9em;
+  color: #fff;
+  border: none;
+  background: #25b5a9;
+  cursor: pointer;
+  text-transform: uppercase;
+  margin: 30px auto 0;
+  display: block;
+  transition: 0.5s all;
+}
+
+button:hover {
+  background: #23f7e5;
+}
