@@ -1,0 +1,10 @@
+.dataWraper {
+  display: flex;
+  padding: 0;
+  list-style: none;
+  justify-content: space-around;
+}
+
+a, a:visited {
+  color: #fff;
+}

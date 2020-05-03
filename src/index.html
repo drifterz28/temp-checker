@@ -3,44 +3,19 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css">
     <title>Project</title>
-    <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
   <body>
     <h1>Tempature tracking and notifications</h1>
     <div class="container">
-      <form>
-        <label>
-          <div class="label">Wifi SSID:</div>
-          <input name="wifi" />
-        </label>
-        <label>
-          <div class="label">Wifi Password:</div>
-          <input name="password" type="password" />
-        </label>
-        <label>
-          <div class="label">Cell number:</div>
-          <input name="phone" type="tel" />
-        </label>
-        <label>
-          <div class="label">API key:</div>
-          <input id="uuid" name="key" disabled/>
-        </label>
-        <label>
-          <div class="label">Low temp notification:</div>
-          <input name="temp" />
-        </label>
-        <label>
-          <div class="label">Report interval:</div>
-          <select name="timing">
-            <option value="15">15 minutes</option>
-            <option value="30">30 minutes</option>
-            <option value="60">60 minutes</option>
-          </select>
-        </label>
-        <button type="submit">Save</button>
-      </form>
+      <ul class="dataWraper">
+        <li>Current Temp: 67°</li>
+        <li>Current voltage: 3.2v</li>
+        <li><a href="setup">Settings</a></li>
+      </ul>
+      <canvas id="myChart" width="400" height="400"></canvas>
     </div>
-    <script src="main.js"></script>
+    <script src="index.bundle.js"></script>
   </body>
 </html>

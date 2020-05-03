@@ -1,0 +1,7 @@
+curl -X POST https://api.twilio.com/2010-04-01/Accounts/AC982c9656fb686d60bd055420cef8c00a/Messages.json \
+--data-urlencode "Body=Hi there!
+Temp 32°
+Voltage 3.2v" \
+--data-urlencode "From=+12057518558" \
+--data-urlencode "To=+15038038883" \
+-u AC982c9656fb686d60bd055420cef8c00a:API_KEY
