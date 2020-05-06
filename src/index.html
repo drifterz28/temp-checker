@@ -9,10 +9,12 @@
     <h1>Tempature tracking and notifications</h1>
     <div class="container">
       <div id="notifications"></div>
-      <form method='POST' id="settings">
+      <form method="POST" id="settings">
         <label>
-          <div class="label">Wifi SSID: <button class="small" id='scan'>Scan</button></div>
-          <input name="ssid" list="wifi"  required/>
+          <div class="label">
+            Wifi SSID: <button class="small" id="scan">Scan</button>
+          </div>
+          <input name="ssid" list="wifi" required />
           <datalist id="wifi"></datalist>
         </label>
         <label>
@@ -21,19 +23,19 @@
         </label>
         <label>
           <div class="label">Cell number:</div>
-          <input name="phone" type="tel"  required/>
+          <input name="phone" type="tel" required />
         </label>
         <label>
           <div class="label">API key:</div>
-          <input id="uuid" name="key" required/>
+          <input id="uuid" name="key" required />
         </label>
         <label class="temp">
           <div class="label">Low temp notification:</div>
-          <input name="temp" required/>
+          <input name="temp" required />
           <span class="units">°f</span>
         </label>
         <label>
-          <div class="label">Report interval:</div>
+          <div class="label">Check interval:</div>
           <select name="timing">
             <option value="30">30 minutes</option>
             <option value="60">1 hour</option>

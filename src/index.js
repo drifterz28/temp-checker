@@ -26,7 +26,12 @@ const saveForm = (e) => {
     }
   })
 }
-
+const getSettings = () => fetch('/settings').then(res => res.json()).then(json => {
+  console.log(json)
+  Object.keys(json).forEach(key => {
+    settingsFrom.querySelector(`[name=${key}`).value = json[key];
+  });
+});
 const scanWifi = () => fetch('/scan').then(res => res.json()).then(json => {
   const options = json.map(wifi => {
     return `<option value="${wifi.ssid}">`
@@ -36,6 +41,7 @@ const scanWifi = () => fetch('/scan').then(res => res.json()).then(json => {
 
 document.addEventListener("DOMContentLoaded", () => {
   scanWifi();
+  getSettings();
 });
 scanBtn.addEventListener('click', (e) => {
   e.preventDefault();

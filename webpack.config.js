@@ -1,6 +1,5 @@
 const path = require("path");
 const fs = require('fs');
-
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const isProduction = process.env.NODE_ENV === "production";
@@ -30,9 +29,6 @@ module.exports = {
         res.json(JSON.parse(data));
       });
       app.post('/settings', function(req, res) {
-        fs.writeFile('./settings.json', JSON.stringify(req.body), err => {
-          if (err) throw err;
-        });
         res.json(req.body);
       });
     }
