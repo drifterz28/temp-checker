@@ -1,0 +1,8 @@
+[
+  { "ssid": "ARRIS-91C8", "strength": -89, "security": true },
+  { "ssid": "SmokersWeAreButWeDont", "strength": -83, "security": true },
+  { "ssid": "Commons Guest", "strength": -66, "security": true },
+  { "ssid": "empire-2.4", "strength": -58, "security": true },
+  { "ssid": "piggyhead", "strength": -84, "security": true },
+  { "ssid": "Millennium Falcon", "strength": -87, "security": true }
+]

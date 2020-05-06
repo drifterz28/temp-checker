@@ -8,10 +8,10 @@
   <body>
     <h1>Tempature tracking and notifications</h1>
     <div class="container">
-      <form method='POST' action='/setup'>
+      <form method='POST' id="settings">
         <label>
           <div class="label">Wifi SSID:</div>
-          <input name="wifi" />
+          <input name="ssid" />
         </label>
         <label>
           <div class="label">Wifi Password:</div>
@@ -41,6 +41,5 @@
         <button type="submit">Save</button>
       </form>
     </div>
-    <script src="setup.bundle.js"></script>
   </body>
 </html>
