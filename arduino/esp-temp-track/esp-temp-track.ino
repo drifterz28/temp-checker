@@ -1,7 +1,7 @@
 #include "ConfigManager.h"
 #include <math.h>
 
-const char *settingsHTML = (char *)"/settings.html";
+const char *settingsHTML = (char *)"/index.html";
 const char *mainJS = (char *)"/index.js";
 
 struct Config {
@@ -27,7 +27,7 @@ void APICallback(WebServer *server) {
     configManager.clearWifiSettings(false);
   });
 
-  server->on("/setup.html", HTTPMethod::HTTP_GET, [server](){
+  server->on("/", HTTPMethod::HTTP_GET, [server](){
     configManager.streamFile(settingsHTML, mimeHTML);
   });
 
@@ -46,7 +46,7 @@ void setup() {
 
   // Setup config manager
   configManager.setAPName("Demo");
-  configManager.setAPFilename("/setup.html");
+  configManager.setAPFilename("/index.html");
 
   // Settings variables
   configManager.addParameter("phone", config.phone, 10);
