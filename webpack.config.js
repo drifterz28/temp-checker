@@ -44,11 +44,11 @@ module.exports = {
       filename: "index.html",
       template: "src/index.html",
     }),
-    new HtmlWebpackPlugin({
-      title: "Temp tracker setup",
-      filename: "setup.html",
-      template: "src/setup.html",
-    }),
+    // new HtmlWebpackPlugin({
+    //   title: "Temp tracker setup",
+    //   filename: "setup.html",
+    //   template: "src/setup.html",
+    // }),
   ],
   module: {
     rules: [
